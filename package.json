@@ -1,7 +1,7 @@
 {
-  "name": "23-Ins_Subdoc-Population",
+  "name": "challenge-social-network-api",
   "version": "1.0.0",
-  "description": "Instructor demo for populating subdocs",
+  "description": "Social Network API made with Mongoose",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
