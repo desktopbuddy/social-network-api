@@ -84,5 +84,31 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // TODO: update and remove friend /api/users/:userId/friends/:friendId
+
+  // add friend
+  async addFriend(req,res) {
+    try {
+      const user = await User.findOneAndUpdate(
+        { _id: req.params.userId },
+        { $addToSet: { friends: req.body } },
+        { runValidators: true, new: true }
+      );
+
+      if (!user) {
+        return res.status(400).json({ message: 'No user with that ID' });
+      }
+
+      res.json(user);
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  },
+  // remove friend /api/users/:userId/friends/:friendId
+  async removeFriend(req, res) {
+    try {
+
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  }
 };
