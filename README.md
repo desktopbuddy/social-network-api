@@ -23,7 +23,7 @@
   ## Usage
 
   Use Insomnia or other REST API client to create, read, update, or delete from the database
-
+  Demo video: https://drive.google.com/file/d/1okw2CfuS32a3m2Hr_Jf6nKnJ7vvHqYna/view
   
 
   ## Contributing
